@@ -1,0 +1,43 @@
+Een slijterij heeft zich gespecialiseerd in whisky. Zij willen het winkelaanbod sneller kunnen raadplegen dan nu het geval is, en verzoeken daarom een applicatie met daarachter een database te maken.
+
+De voornaamste doelen zijn om binnen het winkelaanbod snel een bepaalde whisky te kunnen opzoeken en eventueel te reserveren op verzoek van een klant, en om het whiskyaanbod te kunnen beheren.
+
+Database
+
+Uitgangspunt bij het opslaan van de gegevens van een whisky is het etiket. 
+Daarop staat op:
+- de naam
+- de leeftijd
+- het productiegebied
+- het alcoholpercentage
+- en de soort (blend, single malt etc.)
+- een plaatje van het etiket
+- de prijs
+- aantal flessen (voorraad)
+
+Naast het opslaan van de whisky's is het ook de bedoeling dat de gegevens van een klant die een whisky reserveert opgeslagen worden.
+
+Inloggen
+
+Elke medewerker van de slijterij heeft evenveel rechten. Het is de bedoeling dat alleen deze medewerkers met de applicatie kunnen werken. Het is daarentegen niet de bedoeling dat medewerkers apart moeten inloggen om met de applicatie te kunnen werken, 
+
+Omdat de eigenaar van de slijterij heeft besloten dat alle ooit ingevoerde whisky's moeten blijven bestaan in de database (whisky’s die uit de handel zijn krijgen een null-waarde), mag het met de applicatie niet mogelijk zijn om een whisky te verwijderen.
+
+Bij het toevoegen van een nieuwe whisky krijgt de gebruiker de mogelijkheid om alle relevante gegevens in te vullen. Een whisky kan niet opgeslagen worden als niet alle gegevens zijn ingevuld (inclusief een plaatje van het etiket).
+
+Er zijn gegevens die met een beperkte keuze kunnen worden ingevoerd (bijvoorbeeld productiegebied). Waar mogelijk wordt die beperkte keuze bij het invoegen aangeboden, met de mogelijkheid toch iets anders in te vullen (voor het productiegebied is bijvoorbeeld te kiezen uit: Islay, Highland, Lowland, Speyside etc., maar naast deze keuzes moet ook de mogelijkheid zijn zelf iets in te vullen).
+
+Nadat alle gegevens zijn ingevuld en het opslaan is gelukt, krijgt de gebruiker de mogelijkheid nog een whisky in te voeren, of anders het invoeren af te sluiten.
+
+Voor het wijzigen van de gegevens bij een whisky moet de mogelijkheid bestaan deze op te zoeken. De criteria hiervoor mogen zijn: de naam, de leeftijd, het productiegebied, de soort, en het alcoholpercentage (ook combinaties daarvan). Als er meer whisky's zijn gevonden die bij de criteria passen, dan worden eerst de namen getoond, waarna de gebruiker uit deze namen degene kiest die hij op het oog had. Pas daarna worden alle gegevens getoond, en bestaat de mogelijkheid wijzigingen uit te voeren. Vóór het uitvoeren van de wijzigingen wordt om een bevestiging gevraagd.
+Whisky zoeken en reserveren
+
+Een klant komt met de vraag of een bepaalde whisky aanwezig is. Deze klant geeft een aantal gegevens door, en op basis van die gegevens wordt een zoekopdracht uitgevoerd. De criteria waarop het programma moet kunnen zoeken zijn dezelfde als bij het uitvoeren van een wijziging.
+
+Nadat de zoekopdracht is uitgevoerd worden in eerste instantie de volgende gegevens getoond: de naam, het productiegebied, de leeftijd, de soort, en het alcoholpercentage. Pas nadat een keuze is gemaakt worden de overige gegevens getoond zoals het plaatje, de prijs, en of de whisky op voorraad is.
+
+Op dat moment bestaat ook de mogelijkheid de wisky te reserveren (meerdere flessen is mogelijk). Er moet rekening gehouden worden met het feit dat er meer gereserveerd kan worden dan er op voorraad is. Bij het reserveren moeten de klantgegevens ook opgeslagen worden. Voordat deze worden ingevoerd wordt eerste gecontroleerd of de betreffende klant al bestaat. Als de klant al bestaat worden de bestaande gegevens gebruikt, anders worden de gegevens op dat moment ingevoerd. Tevens behoort het tot de mogelijkheden om klantgegevens te wijzigen en / of te verwijderen.
+
+Als een whisky wordt gereserveerd, neemt de voorraad met het aantal gereserveerde flessen af. Als een reservering wordt geannuleerd, dan worden de vrijgekomen flessen weer bij de beschikbare voorraad opgeteld.
+
+Naast het zoeken op een whisky, moet het ook mogelijk zijn een overzicht te maken van alle reserveringen. Op dat overzicht staat de naam, de leeftijd, en het alcoholpercentage van de whisky. Bovendien staan er de prijs, het aantal gereserveerde flessen, en de klantnaam op. Dit overzicht moet in een Word-bestand gezet worden.
