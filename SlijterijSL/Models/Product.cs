@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SlijterijSL.Models
 {
-    public class Label
+    public class Product
     {
         #region Initiate
         public string Name { get; set; }
@@ -26,7 +26,7 @@ namespace SlijterijSL.Models
 
         public int Amount { get; set; }
 
-        public bool IsAvailable { get; set; } 
+        public bool IsAvailable { get; set; }
         #endregion
 
 

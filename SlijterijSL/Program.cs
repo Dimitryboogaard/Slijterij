@@ -12,6 +12,8 @@ namespace SlijterijSL
 {
     public class Program
     {
+        
+
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();
@@ -20,5 +22,10 @@ namespace SlijterijSL
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>();
+
+        // TODO: Implement authenticatie door watchwoord en gebruikers naam te hashen en in de Database op te slaan.
+
+
+       
     }
 }

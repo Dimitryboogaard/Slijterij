@@ -5,8 +5,7 @@ using System.Threading.Tasks;
 
 namespace SlijterijSL.Models
 {
-    public class Reservation : Product
+    public class Order
     {
-
     }
 }
